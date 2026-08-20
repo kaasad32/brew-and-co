@@ -681,8 +681,8 @@ Parchment-on-Kraft ring, the same circular motif the Batch Stamp's rim
 uses, reused here as a quieter echo, not a duplicate of the signature —
 name, optional badge (mono, Moss), `Price` (mono, £), and the same corner
 `Plus` affordance badge as Featured Item Card. The `<Image>` itself uses
-`alt=""` — the photo is decorative at this size (~64px, up to ~3x DPR,
-`sizes="64px"`); the button's `aria-label` and the visible item name
+`alt=""` — the photo is decorative at this size (~96px, up to ~3x DPR,
+`sizes="96px"`); the button's `aria-label` and the visible item name
 already convey the content, so the alt text doesn't double-announce it.
 `aria-label` states the full add-to-bag action and price (e.g. "Add
 Latte to bag, 5.00 pounds") since the visible text alone doesn't say what

@@ -23,8 +23,8 @@ export function MenuItemTile({ category, name, description, priceCents, badge }:
         <Plus className="h-4 w-4" aria-hidden="true" />
       </span>
 
-      <span className="relative block h-16 w-16 overflow-hidden rounded-full border border-foreground/15 bg-background transition-colors duration-base ease-standard group-hover:border-accent/40">
-        <Image src={src} alt="" fill sizes="64px" className="object-cover" />
+      <span className="relative block h-24 w-24 overflow-hidden rounded-full border border-foreground/15 bg-background transition-colors duration-base ease-standard group-hover:border-accent/40">
+        <Image src={src} alt="" fill sizes="96px" className="object-cover" />
       </span>
 
       <span className="flex flex-col items-center gap-1">
