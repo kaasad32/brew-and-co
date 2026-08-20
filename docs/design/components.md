@@ -674,19 +674,37 @@ lookup (mirrors `findMenuItem`'s not-found error shape). This is still
 **not** a Batch Stamp (see Featured Item Card above for why): the stamp
 stays reserved for whole-bean bags with real origin data.
 
+**Iterated a third time**, from the circular photo badge described above to
+a full-width square photo filling the top of the card — the same treatment
+Featured Item Card uses. The circular badge read fine at the old 96px size
+inside `MenuCategorySection`'s tighter grid, but once the grid widened
+(`grid-cols-2 sm:grid-cols-3 lg:grid-cols-4`, a photo now spans a full
+column instead of a small badge in the corner) a small ringed circle felt
+under-scaled next to Featured Item Card's square treatment one section up —
+two different photo shapes for what's visually the same "item card"
+concept. Squaring the photo off and letting it fill the card's full width
+brought the two into alignment.
+
 Each tile (`"use client"`, calls `useCart().addItem` on click) is a
-`<button>`: a circular photo badge — a `next/image` `<Image fill
-className="object-cover">` inside a `rounded-full overflow-hidden`
-Parchment-on-Kraft ring, the same circular motif the Batch Stamp's rim
-uses, reused here as a quieter echo, not a duplicate of the signature —
-name, optional badge (mono, Moss), `Price` (mono, £), and the same corner
-`Plus` affordance badge as Featured Item Card. The `<Image>` itself uses
-`alt=""` — the photo is decorative at this size (~96px, up to ~3x DPR,
-`sizes="96px"`); the button's `aria-label` and the visible item name
-already convey the content, so the alt text doesn't double-announce it.
-`aria-label` states the full add-to-bag action and price (e.g. "Add
-Latte to bag, 5.00 pounds") since the visible text alone doesn't say what
-the click does.
+`<button>`: a full-width square photo — `next/image` `<Image fill
+sizes="(min-width: 1024px) 22vw, (min-width: 640px) 30vw, 45vw"
+className="object-cover">` inside an `aspect-square overflow-hidden
+rounded-sm` — name, optional badge (mono, Moss), `Price` (mono, £), and the
+same corner `Plus` affordance badge as Featured Item Card. Unlike the old
+badge, the `<Image>` now carries its real `alt` from
+`lib/menu-item-images.ts` rather than `alt=""`: at this size the photo is
+no longer a small decorative accent next to the name, it's the dominant
+element of the card, so it needs its own description. `aria-label` still
+states the full add-to-bag action and price (e.g. "Add Latte to bag, 5.00
+pounds") since the visible text alone doesn't say what the click does.
+
+The photo swap forced a re-source of 25 of the 29 `lib/menu-item-images.ts`
+files: they'd originally been downloaded at 300px wide, sized for the old
+96px circle at up to ~3x DPR. Rendered full-width in a grid column at this
+size, those 300px files would upscale and look soft. All 25 were re-found
+on Pexels and re-downloaded at 800px with the same `image-optimizer` skill
+(the 4 files shared with `lib/featured-items.ts` were already 800px and
+didn't need touching).
 
 ### Menu Category Section
 

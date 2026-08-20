@@ -38,17 +38,21 @@ Router) + React 19 + Tailwind CSS v4 (CSS-first `@theme`) + TypeScript +
 
 ## Status
 
-Adopted, and iterated twice. `app/globals.css`, `app/layout.tsx`,
+Adopted, and iterated three times. `app/globals.css`, `app/layout.tsx`,
 `next.config.ts`, and `components/`/`lib/` implement this system for three
 live pages — Home (`app/page.tsx`), About (`app/about/page.tsx`), Menu
 (`app/menu/page.tsx`) — with a working cart and checkout. The menu started
 as category photos + a typographic item list; the user then explicitly
 asked for a clickable icon grid instead, which superseded that decision
 outright. That grid then moved from one shared `lucide-react` icon per
-category to a real photo per item (`lib/menu-item-images.ts`), since 29
-items sharing 4 icons read as noise once the grid was live
-(`components.md` → Menu Item Tile explains both changes and why neither is
-drift).
+category to a real photo per item in a small circular badge
+(`lib/menu-item-images.ts`), since 29 items sharing 4 icons read as noise
+once the grid was live. The badge then grew into a full-width square photo
+filling the top of each tile (matching Featured Item Card's treatment),
+which forced 25 of those per-item photos to be re-sourced at 800px — the
+originals were downloaded at 300px for the old 96px circle and would have
+looked soft at full grid-column width (`components.md` → Menu Item Tile
+explains all three changes and why none of them is drift).
 
 Real bugs surfaced across both builds and are now documented as lessons in
 `components.md` so they don't recur: (1) never override a variant's

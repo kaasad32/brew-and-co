@@ -18,8 +18,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Espresso",
     image: {
       src: "/images/menu-espresso.webp",
-      alt: "A simple espresso shot in a small white cup, highlighting the crema",
-      credit: "Photo by Jean-Paul Wright / Pexels",
+      alt: "A close-up shot of a fresh espresso shot under a machine spout",
+      credit: "Photo by Mike Jones / Pexels",
     },
   },
   {
@@ -28,7 +28,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-macchiato.webp",
       alt: "A close-up shot of a short macchiato in a cafe",
-      credit: "Photo by bianca-jelezniac / Pexels",
+      credit: "Photo by Bianca Jelezniac / Pexels",
     },
   },
   {
@@ -36,8 +36,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Americano",
     image: {
       src: "/images/menu-americano.webp",
-      alt: "Black coffee in a white cup on a plain background",
-      credit: "Photo by Tugba Ozturk / Pexels",
+      alt: "An overhead view of black coffee in a white mug surrounded by roasted coffee beans",
+      credit: "Photo by Toni Cuenca / Pexels",
     },
   },
   {
@@ -46,7 +46,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-cortado.webp",
       alt: "A hand holding a cortado coffee with heart-shaped latte art on a wooden table",
-      credit: "Photo by Raymond Petrik / Pexels",
+      credit: "Photo by Mohammad Khorram / Pexels",
     },
   },
   {
@@ -55,7 +55,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-cappuccino.webp",
       alt: "An overhead view of a foamy cappuccino with latte art",
-      credit: "Photo by Orlovamaria / Pexels",
+      credit: "Photo by Gül Işık / Pexels",
     },
   },
   {
@@ -63,8 +63,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Flat White",
     image: {
       src: "/images/menu-flat-white.webp",
-      alt: "A flat white coffee with heart-shaped latte art",
-      credit: "Photo by Anne-Marie / Pexels",
+      alt: "A warm flat white with heart-shaped latte foam art on a textured wooden table",
+      credit: "Photo by Shambhudananda Sahoo / Pexels",
     },
   },
   {
@@ -81,8 +81,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Mocha",
     image: {
       src: "/images/menu-mocha.webp",
-      alt: "A glass of mocha coffee topped with whipped cream and chocolate",
-      credit: "Photo by Franco Monsalvo / Pexels",
+      alt: "A tall glass of layered mocha coffee topped with cream and chocolate",
+      credit: "Photo by Larissa Miranda / Pexels",
     },
   },
 
@@ -102,7 +102,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-pain-au-chocolat.webp",
       alt: "A pain au chocolat pastry on a white plate",
-      credit: "Photo by Roop Sarkar / Pexels",
+      credit: "Photo by Swarup Sarkar / Pexels",
     },
   },
   {
@@ -138,7 +138,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-almond-croissant.webp",
       alt: "A freshly baked almond croissant topped with toasted almond slices",
-      credit: "Photo by nano-erdozain / Pexels",
+      credit: "Photo by Nano Erdozain / Pexels",
     },
   },
   {
@@ -147,7 +147,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-cinnamon-roll.webp",
       alt: "A close-up of a freshly baked cinnamon roll",
-      credit: "Photo by Alex Koval / Pexels",
+      credit: "Photo by Skyler Ewing / Pexels",
     },
   },
 
@@ -157,8 +157,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Egg & Cheddar Biscuit",
     image: {
       src: "/images/menu-egg-cheddar-biscuit.webp",
-      alt: "A breakfast biscuit sandwich with egg and cheese",
-      credit: "Photo by Angele J / Pexels",
+      alt: "A close-up of a breakfast sandwich with egg and melted cheddar on a toasted muffin",
+      credit: "Photo by RDNE Stock project / Pexels",
     },
   },
   {
@@ -185,7 +185,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-caprese-panini.webp",
       alt: "A caprese sandwich with fresh mozzarella, tomato, and basil on ciabatta bread",
-      credit: "Photo by Andres Alaniz / Pexels",
+      credit: "Photo by Change C.C / Pexels",
     },
   },
   {
@@ -213,8 +213,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Iced Americano",
     image: {
       src: "/images/menu-iced-americano.webp",
-      alt: "An iced Americano showing layered espresso and ice in a glass",
-      credit: "Photo by Nguyễn Tiến Thành / Pexels",
+      alt: "A hand holding a glass of iced Americano in natural sunlight",
+      credit: "Photo by hellobyesunny / Pexels",
     },
   },
   {
@@ -231,8 +231,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Cold Brew",
     image: {
       src: "/images/menu-cold-brew.webp",
-      alt: "A chilled glass of iced cold brew coffee on a bar mat",
-      credit: "Photo by Kari Alfonso / Pexels",
+      alt: "An overhead view of a chilled glass of iced cold brew coffee with ice cubes",
+      credit: "Photo by solod_sha / Pexels",
     },
   },
   {
@@ -268,7 +268,7 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     image: {
       src: "/images/menu-iced-matcha-latte.webp",
       alt: "A chilled glass of iced matcha latte with milk",
-      credit: "Photo by Soc Nang Dung / Pexels",
+      credit: "Photo by Far MWX / Pexels",
     },
   },
   {
@@ -276,8 +276,8 @@ const MENU_ITEM_IMAGES: { category: MenuCategory; name: string; image: ImageAsse
     name: "Horchata Cold Brew",
     image: {
       src: "/images/menu-horchata-cold-brew.webp",
-      alt: "A traditional horchata drink in a mason jar",
-      credit: "Photo by Diana Reyes / Pexels",
+      alt: "A traditional Mexican horchata drink with rice and cinnamon",
+      credit: "Photo by Irene Constantino / Pexels",
     },
   },
 ];
