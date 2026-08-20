@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* All images are local WebP files under public/images/ (see
+   * .claude/skills/image-optimizer) — no remotePatterns needed. */
 };
 
 export default nextConfig;

@@ -1,0 +1,30 @@
+category,name,description,price,badge
+Espresso,Espresso,"A double shot, pulled to order.",3.50,
+Espresso,Macchiato,Espresso marked with a spoon of foam.,3.75,
+Espresso,Americano,"Espresso, hot water, nothing else.",4.00,
+Espresso,Cortado,Equal parts espresso and steamed milk.,4.50,
+Espresso,Cappuccino,"Espresso, steamed milk, a thick cap of foam.",4.75,Popular
+Espresso,Flat White,"Double espresso, microfoam, no cap.",5.00,
+Espresso,Latte,"Espresso and steamed milk, light foam.",5.00,House favorite
+Espresso,Mocha,"Espresso, steamed milk, dark chocolate.",5.50,
+Pastries,Butter Croissant,Laminated dough baked fresh each morning.,3.75,House favorite
+Pastries,Pain au Chocolat,Butter pastry wrapped around two batons of dark chocolate.,4.25,
+Pastries,Banana Walnut Muffin,"Ripe banana, toasted walnuts, brown butter crumble.",4.00,
+Pastries,Blueberry Scone,"Buttermilk scone, wild blueberries, turbinado sugar.",4.00,
+Pastries,Morning Bun,Croissant dough rolled in orange sugar.,4.25,
+Pastries,Almond Croissant,"Butter croissant, almond cream, sliced almonds.",4.75,
+Pastries,Cinnamon Roll,"Slow-proofed, brown sugar swirl, cream cheese icing.",4.75,Popular
+Sandwiches,Egg & Cheddar Biscuit,"Fried egg, aged cheddar, on a buttermilk biscuit.",7.50,
+Sandwiches,Ham & Gruyère Croissant,"Black forest ham, gruyère, dijon, on a butter croissant.",8.50,Popular
+Sandwiches,Avocado Toast,"Mashed avocado, chili flake, lemon, on sourdough.",8.75,House favorite
+Sandwiches,Caprese Panini,"Fresh mozzarella, tomato, basil, balsamic, pressed on ciabatta.",9.25,
+Sandwiches,BLT,"Applewood bacon, lettuce, tomato, aioli, on sourdough.",9.00,
+Sandwiches,Turkey & Swiss on Rye,"Roast turkey, swiss, whole grain mustard, on rye.",9.50,
+Cold Drinks,Iced Americano,Espresso over ice with cold water.,4.25,
+Cold Drinks,Iced Latte,"Espresso, cold milk, ice.",5.25,Popular
+Cold Drinks,Cold Brew,"Steeped 18 hours, served over ice.",4.75,House favorite
+Cold Drinks,Sparkling Espresso Tonic,Espresso over tonic water and ice.,5.25,
+Cold Drinks,Iced Mocha,"Espresso, cold milk, dark chocolate, ice.",5.75,
+Cold Drinks,Nitro Cold Brew,"Cold brew on tap, nitrogen-charged for a creamy pour.",5.50,
+Cold Drinks,Iced Matcha Latte,"Ceremonial matcha, cold milk, ice.",5.50,
+Cold Drinks,Horchata Cold Brew,Cold brew over house-made horchata.,5.75,Popular

@@ -1,8 +1,20 @@
 /**
- * Brew & Co — design tokens + site-level CSS.
- * Token block sourced from docs/design/tokens.css — keep the two in sync if
- * either changes. Additions below (perforation utilities, dialog backdrop,
- * stamp-down keyframes) are specified in docs/design/components.md.
+ * Brew & Co — design tokens
+ *
+ * Tailwind v4 CSS-first theme. This mirrors the structure already in
+ * app/globals.css (primitives in :root, mapped into @theme inline) — it is
+ * meant to REPLACE the contents of app/globals.css when the brand is wired
+ * up, not sit alongside it. See tokens.md for the rationale behind each
+ * value and for values (motion, breakpoints) that intentionally live outside
+ * @theme.
+ *
+ * Fonts: register these three in app/layout.tsx via next/font/google and
+ * expose them as the CSS variables referenced below (same pattern the
+ * starter already uses for --font-geist-sans):
+ *
+ *   const fraunces = Fraunces({ variable: "--font-fraunces", subsets: ["latin"] });
+ *   const archivo  = Archivo({ variable: "--font-archivo", subsets: ["latin"] });
+ *   const plexMono = IBM_Plex_Mono({ variable: "--font-plex-mono", subsets: ["latin"], weight: ["400", "500"] });
  */
 
 @import "tailwindcss";
@@ -117,131 +129,4 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-body);
-}
-
-/* ---- Hero Batch Stamp entrance ------------------------------------------ */
-@keyframes stamp-down {
-  from {
-    opacity: 0;
-    transform: scale(1.12) rotate(-2deg);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
-}
-.stamp-hero {
-  animation: stamp-down var(--duration-deliberate) var(--ease-emphasized) both;
-}
-@media (prefers-reduced-motion: reduce) {
-  .stamp-hero {
-    animation: stamp-fade var(--duration-base) linear both;
-  }
-}
-@keyframes stamp-fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* ---- Tear-line / perforation utilities ---------------------------------- */
-/* Reused outside the <TearLine> component for a torn-slip edge on the
-   reservation dialog and a ticket-stub perforation on event cards. */
-.tear-edge-top {
-  position: relative;
-  border-top: 1px dashed color-mix(in srgb, var(--color-foreground) 25%, transparent);
-}
-.tear-edge-top::before,
-.tear-edge-top::after {
-  content: "";
-  position: absolute;
-  top: -7px;
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  background: var(--color-background);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 20%, transparent);
-}
-.tear-edge-top::before {
-  left: -7px;
-}
-.tear-edge-top::after {
-  right: -7px;
-}
-
-.tear-edge-side {
-  position: relative;
-  border-left: 1px dashed color-mix(in srgb, var(--color-foreground) 25%, transparent);
-}
-.tear-edge-side::before,
-.tear-edge-side::after {
-  content: "";
-  position: absolute;
-  left: -7px;
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  background: var(--color-background);
-  border: 1px solid color-mix(in srgb, var(--color-foreground) 20%, transparent);
-}
-.tear-edge-side::before {
-  top: -7px;
-}
-.tear-edge-side::after {
-  bottom: -7px;
-}
-
-/* ---- Reservation dialog -------------------------------------------------- */
-/* Centering is explicit, not the UA default `margin: auto` — Tailwind's
-   Preflight reset zeroes margin on every element, which silently defeats
-   the native <dialog> centering that would otherwise apply. */
-dialog.reservation-dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  background: var(--color-background);
-  color: var(--color-foreground);
-  border: none;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  padding: 0;
-  max-width: 32rem;
-  width: calc(100vw - 2rem);
-  max-height: calc(100vh - 2rem);
-  overflow-y: auto;
-}
-dialog.reservation-dialog::backdrop {
-  background: rgba(42, 24, 16, 0.55);
-  backdrop-filter: blur(2px);
-}
-
-/* ---- Cart drawer ---------------------------------------------------------- */
-/* Same native-<dialog> approach as the reservation modal (see its note
-   above on Preflight defeating default margin), styled as a right-docked
-   full-height panel instead of a centered card. */
-dialog.cart-drawer {
-  position: fixed;
-  inset: 0 0 0 auto;
-  top: 0;
-  right: 0;
-  margin: 0;
-  height: 100%;
-  max-height: 100%;
-  width: min(26rem, 100vw);
-  max-width: min(26rem, 100vw);
-  background: var(--color-background);
-  color: var(--color-foreground);
-  border: none;
-  border-radius: 0;
-  box-shadow: var(--shadow-lg);
-  padding: 0;
-}
-dialog.cart-drawer::backdrop {
-  background: rgba(42, 24, 16, 0.55);
-  backdrop-filter: blur(2px);
 }
